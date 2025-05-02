@@ -1,0 +1,15 @@
+lifrcycle method >> Component Mount-creation 
+Component Update
+Component Unmount-deletion
+
+
+useEffect()>>it is used for stop the unusuall rerendering in the Component
+ex-  useEffect(()=>{
+        console.log("Service Component is updated")
+        return ()=>{
+            console.log("Seervices Component is deleted");
+            
+        }
+    },[second]);
+
+    locomotive.js for smoothning website
