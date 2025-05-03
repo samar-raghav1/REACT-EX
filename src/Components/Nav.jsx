@@ -11,7 +11,7 @@ function Nav() {
                 elem.length===0 ? <span key={index}  className="w-[2px] h-7 bg-zinc-800"></span> :
                
             <a className='text-sm flex item-center gap-1 'key={index} href='#'>
-               {index===1 && (<span style={{boxShadow:"0 0 0.45em #00FF19"}} key={index} className='inline-block w-1 h-1 bg-green-500 rounded-full'></span>)}
+               {index===1 && (<span style={{boxShadow:"0 0 0.45em #00FF19"}} key={index} className='inline-block w-1 h-1 mt-2 bg-green-500 rounded-full'></span>)}
                 
                 {elem}
                 </a>

@@ -10,13 +10,13 @@ const [images,setImages] = useState(
       {url:"https://wallpaperaccess.com/full/1385386.jpg",top:"45%",left:"56%",isActive:false},
       {url:"https://jbsoftware.ca/wp-content/uploads/web-design.jpg",top:"60%",left:"53%",isActive:false},
       {url:"https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg",top:"43%",left:"40%",isActive:false},
-      {url:"https://th.bing.com/th/id/OIP.pVkS6u7znbLk5QLoJNYXkgHaDt?w=1200&h=600&rs=1&pid=ImgDetMain",top:"65%",left:"55%",isActive:true}
+      {url:"https://th.bing.com/th/id/OIP.pVkS6u7znbLk5QLoJNYXkgHaDt?w=1200&h=600&rs=1&pid=ImgDetMain",top:"65%",left:"55%",isActive:false}
     ]);
 
    const {scrollYProgress} =useScroll();
    scrollYProgress.on("change",(data)=>{
     function imagesShow(arr){
-      setImages(prev=>
+      setImages((prev)=>
         prev.map((item,index)=>(
          arr.indexOf(index)===-1 ?{...item, isActive:false}:{isActive:true}
         )
@@ -27,19 +27,19 @@ const [images,setImages] = useState(
     console.log(Math.floor(data*100));
     switch(Math.floor(data*100)){
       case 0:
-        imagesShow([])
+        imagesShow([]);
         break;
       case 1:
-        imagesShow([0])
+        imagesShow([0]);
         break;
       case 2:
-        imagesShow([0,1])
+        imagesShow([0,1]);
         break;
       case 3:
-        imagesShow([0,1,2,3])
+        imagesShow([0,1,2,3]);
         break;
       case 4:
-        imagesShow([0,1,2,3,4])
+        imagesShow([0,1,2,3,4]);
         break;
       
     }
