@@ -27,8 +27,8 @@ function Products() {
           animate={{y:pos+`rem`}}
           transition={{ease:[0.76,0,0.24,1],duration:0.6}}
            className="window absolute w-[32rem] h-[23rem] bg-sky-200 left-[60%] -translate-x-[50%] overflow-hidden ">
-          <motion.div  transition={{ease:[0.76,0,0.24,1],duration:0.5}}  animate={{y:-pos+`rem`}} className="w-full h-full bg-sky-100">
-            <img className='w-full h-full overflow-hidden' src="https://th.bing.com/th/id/OIP.pVkS6u7znbLk5QLoJNYXkgHaDt?w=1200&h=600&rs=1&pid=ImgDetMain" alt="" />
+          <motion.div  transition={{ease:[0.76,0,0.24,1],duration:0.5}}  animate={{y:-pos+`rem`}} className="w-full h-full rounded-md bg-sky-100">
+            <img className='w-full h-full rounded-md overflow-hidden' src="https://th.bing.com/th/id/OIP.pVkS6u7znbLk5QLoJNYXkgHaDt?w=1200&h=600&rs=1&pid=ImgDetMain" alt="" />
             </motion.div>
           <motion.div  transition={{ease:[0.76,0,0.24,1],duration:0.5}} animate={{y:-pos+`rem`}} className="w-full h-full bg-sky-200">
              <img className='w-full h-full overflow-hidden' src="https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg" alt="" />
